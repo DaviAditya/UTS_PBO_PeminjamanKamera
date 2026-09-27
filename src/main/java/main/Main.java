@@ -52,14 +52,19 @@ public class Main {
                     String namaPeminjam = scanner.nextLine();
                     System.out.print("Nama Kamera dipinjam: ");
                     String namaKamera = scanner.nextLine();
+                    System.out.println("Lama peminjaman: ");
+                    int lamaHari = scanner.nextInt();
+                    scanner.nextLine();
+                    System.out.println("==>> SUKSES <<== PEMINAJAMAN BARU DITAMBAHKAN ==");
 
-                    service.pinjamKamera(namaPeminjam, namaKamera);
+                    service.pinjamKamera(namaPeminjam, namaKamera, lamaHari);
                     break;
 
                 case 3:
                     service.tampilkanSemuaPeminjaman();
                     System.out.print("Masukkan ID Peminjaman yang dikembalikan: ");
                     int idPeminjaman = scanner.nextInt();
+                    System.out.println("==>> SUKSES <<== KAMERA TELAH DIKEMBALIKAN ==");
 
                     service.kembalikanKamera(idPeminjaman);
                     break;
@@ -69,7 +74,7 @@ public class Main {
                     break;
 
                 case 5:
-                    System.out.println("Terima kasih telah menggunakan sistem ini!");
+                    System.out.println("==>>Terima kasih telah menggunakan sistem ini!<<==");
                     break;
 
                 default:

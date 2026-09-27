@@ -25,7 +25,7 @@ public class Kamera {
         return jenis;
     }
 
-    // Method untuk menampilkan informasi kamera
+    // Untuk menampilkan informasi kamera
     public String getInfo() {
         return nama + " [" + jenis + "]";
     }

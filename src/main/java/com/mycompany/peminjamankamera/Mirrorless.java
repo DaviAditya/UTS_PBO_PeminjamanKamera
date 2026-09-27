@@ -12,4 +12,9 @@ public class Mirrorless extends Kamera {
     public Mirrorless(String nama) {
         super(nama, "Mirrorless");
     }
+    
+    @Override
+    public String getInfo() {
+        return "[Mirrorless] " + getNama() + " (Bentuk Ringkas & Tanpa Cermin)";
+    }
 }

@@ -12,4 +12,9 @@ public class DSLR extends Kamera {
     public DSLR(String nama) {
         super(nama, "DSLR");
     }
+
+    @Override
+    public String getInfo() {
+        return "[DSLR] " + getNama() + " (Dengan Cermin Refleks)";
+    }
 }

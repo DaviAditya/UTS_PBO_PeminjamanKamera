@@ -121,4 +121,38 @@ public class Service {
             System.out.println(p);
         }
     }
+
+    // Method Overloading 2 (Dengan parameter tambahan lamaHari)
+    public PeminjamanKamera pinjamKamera(String namaPeminjam, String namaKamera, int lamaHari) {
+        boolean ditemukan = false;
+        for (Kamera k : daftarKamera) {
+            if (k.getNama().equalsIgnoreCase(namaKamera)) {
+                ditemukan = true;
+                break;
+            }
+        }
+
+        if (!ditemukan) {
+            System.out.println("Kamera '" + namaKamera + "' tidak ditemukan di daftar.");
+            return null;
+        }
+        if (sedangDipinjam(namaKamera)) {
+            System.out.println("Maaf, kamera '" + namaKamera + "' sedang dipinjam orang lain.");
+            return null;
+        }
+
+        PeminjamanKamera peminjamanBaru = new PeminjamanKamera(
+                nomorBerikutnya++,
+                namaKamera,
+                namaPeminjam,
+                LocalDate.now()
+        );
+
+        daftarPeminjaman.add(peminjamanBaru);
+
+        System.out.println("\nPeminjaman berhasil dicatat untuk " + lamaHari + " hari!");
+        System.out.println(peminjamanBaru);
+
+        return peminjamanBaru;
+    }
 }
