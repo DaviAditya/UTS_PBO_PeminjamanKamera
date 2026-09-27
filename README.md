@@ -1,4 +1,4 @@
-# Tugas Individu PBO
+# UTS PBO
 ## Nama: Muhammad Davi Aditya Pratama
 ## NIM: 2509119070
 
@@ -6,36 +6,43 @@
 Sistem Peminjaman Kamera merupakan Sistem ini merupakan aplikasi berbasis 
 konsol (command-line interface) yang dibangun menggunakan bahasa pemrograman Java. 
 Aplikasi ini dirancang untuk mengelola proses peminjaman dan pengembalian kamera secara 
-terstruktur dengan menerapkan konsep-konsep dasar Object-Oriented Programming (OOP). 
-Sistem ini dirancang untuk memudahkan tim atau organisasi dalam manajemen kamera yang digunakan.
+terstruktur dengan menerapkan konsep-konsep dasar Object-Oriented Programming (OOP) seperti
+Inheritance, Polymorphism, Encapsulation, dan Abstraction. Sistem ini dirancang untuk 
+memudahkan tim atau organisasi dalam manajemen kamera yang digunakan.
+
+### Fungsi dan Kegunaan Utama:
+1. Manajemen Kategori Kamera: Memisahkan jenis kamera berbasis spesifikasinya (DSLR dan Mirrorless) melalui struktur pewarisan (Inheritance).
+2. Pengecekan Ketersediaan Otomatis: Menampilkan daftar unit kamera yang sedang tidak dipinjam
+3. Pencatatan Peminjaman: Mencatat transaksi peminjaman baru lengkap dengan ID unik, nama peminjam, nama unit, dan tanggal transaksi secara otomatis.
+4. Pengembalian Kamera: Mengubah status peminjaman dari "Dipinjam" menjadi "Selesai" serta mencatat tanggal pengembalian unit.
+5. Riwayat Peminjaman: Menampilkan seluruh log peminjaman kamera yang terdaftar di dalam sistem.
 
 ### Pilihan menu
 <img width="346" height="168" alt="image" src="https://github.com/user-attachments/assets/2c1224a0-64f5-45bb-a515-976d9e06ab16" />
 
 Terdapat 5 pilihan menu pada Sistem Peminjaman Kamera, yaitu:    
 1. Lihat Kamera Tersedia  
-   <img width="316" height="147" alt="image" src="https://github.com/user-attachments/assets/2e5a73f9-8ac3-45aa-a5fc-fd6615f8a30a" />  
+   <img height="250" alt="image" src="https://github.com/user-attachments/assets/d3f41b56-f903-40e6-905a-86bcdfceceed" />  
    Pada menu ini, kita dapat melihat kamera yang tersedia atau tidak dipinjam beserta tipennya yaitu DSLR atau mirrorless. Pada menu ini tertampil juga 4 Kamera
-   yang tersedia yaitu Canon EOS 90D, Sony Alpha A7 III, Nikon Z6 dan Canon 600d.
+   yang tersedia beserta kelebihannya masing-masing yaitu Canon EOS 90D, Sony Alpha A7 III, Nikon Z6 dan Canon 600d.
    
 2. Pinjam Kamera  
-   <img width="1102" height="265" alt="image" src="https://github.com/user-attachments/assets/e7d880a0-a5eb-4623-a5d2-c9391e6b4bcc" />  
-   Pada menu ini, kita dapat meminjam kamera yang tersedia. Untuk meminjam cukup input nama dan kamera yang ingin dipinjam.  
-   <img width="373" height="180" alt="image" src="https://github.com/user-attachments/assets/ae7bbe5d-e365-4081-8427-e3740dbe1e0f" />   
-   Gambar diatas kamera yang masih tersedia setelah dilakukan peminjaman sebelumnya.
-   
-3. Kembalikan Kamera  
-   <img width="1190" height="182" alt="image" src="https://github.com/user-attachments/assets/d75a388b-558d-45d5-9df9-f13738124218" />  
-   Pada menu ini, kita dapat menginput data kamera yang sudah dikembalikan. Untuk mengembalikannya cukup input id peminjaman saja maka sisteam akan mengetahui
-   kamera mana yang dikembalikan.  
-    <img width="350" height="170" alt="image" src="https://github.com/user-attachments/assets/e02a4e79-a810-4d69-8d64-f452236fe9b9" />
+   <img height="350" alt="image" src="https://github.com/user-attachments/assets/ad23780f-e586-4d9c-8164-d43e2d448da7" />  
+   Pada menu ini, kita dapat meminjam kamera yang tersedia. Untuk meminjam cukup input nama peminjam, kamera yang ingin dipinjam dan lama peminjaman yang cukup menginput angka saja dengan akumulasi hari.
+   <img height="45" alt="image" src="https://github.com/user-attachments/assets/e9582052-ab7c-4807-9ceb-30dc90343234" />  
+   Gambar diatas merupakan bukti peminjaman.
 
-   dan ini hasil dari pengembalian kamera, sistem akan mengembalikan kamera tersebut kedalam menu Kamera Tersedia.  
+3. Kembalikan Kamera  
+   <img width="927" height="230" alt="image" src="https://github.com/user-attachments/assets/dd972cb8-2ecb-4f97-965e-a0ba79840965" />  
+   Pada menu ini, kita dapat menginput data kamera yang sudah dikembalikan. Untuk mengembalikannya cukup input id peminjaman saja maka sistem akan mengetahui
+   kamera mana yang dikembalikan.  
+   <img width="987" height="61" alt="image" src="https://github.com/user-attachments/assets/2099255f-edcc-47af-a695-d94199207934" />  
+   Gambar diatas merupakan bukti pengembalian kamera dari peminjaman sebelumnya.
    
-4. Lihat Semua Peminjaman  
-   <img width="1108" height="111" alt="image" src="https://github.com/user-attachments/assets/38a3ea21-d81a-4203-bb40-aafe9fe11a7c" />  
+4. Lihat Semua Peminjaman
+   <img width="987" height="200" alt="image" src="https://github.com/user-attachments/assets/d46b2302-6a45-45ff-b604-2cd981f19204" />  
    Pada menu ini akan tertampil kamera yang telah dipinjam. Dimenu ini juga dapat terlihat status dari peminjaman kamera tersebut, apakah selesai atau masih dipinjam.
    
 5. Keluar  
-   <img width="707" height="61" alt="image" src="https://github.com/user-attachments/assets/5e217fc2-5f55-4b27-bb86-acc63ee3e4d9" />  
+   <img width="412" height="148" alt="image" src="https://github.com/user-attachments/assets/035f0125-0fb1-4da6-8b22-4e9536e4dca4" />  
    Menu terakhir pada sistem ini berfungsi untuk keluar pada sistem.
